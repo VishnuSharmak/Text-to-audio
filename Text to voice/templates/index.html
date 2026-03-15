@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Audio</title>
+</head>
+<body>
+
+<h1>Text ➜ Audio (Voice Selector)</h1>
+
+<textarea id="text" rows="6" cols="50" placeholder="Enter text here..."></textarea>
+<br><br>
+
+<label>Select Voice:</label>
+<select id="voice">
+    <option value="indian">Indian / English</option>
+    <option value="female">Female</option>
+    <option value="male">Male</option>
+    <option value="hindi">Hindi (if available)</option>
+</select>
+
+<br><br>
+
+<button onclick="convert()">1️⃣ Convert to Audio</button>
+<button onclick="preview()">2️⃣ Preview Audio</button>
+
+<button onclick="downloadAudio()">3️⃣ Download Audio</button>
+    <button>3️⃣ Download Audio</button>
+</a>
+
+<br><br>
+
+<audio id="player" controls style="display:none;"></audio>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
